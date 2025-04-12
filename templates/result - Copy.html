@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Geolocation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>IP Geolocation Result</h1>
+
+        {% if data %}
+        <div class="info-card">
+            <p><strong>IP Address:</strong> {{ data.query }}</p>
+            <p><strong>City:</strong> {{ data.city }}</p>
+            <p><strong>Country:</strong> {{ data.country }}</p>
+            <p><strong>Latitude:</strong> {{ data.lat }}</p>
+            <p><strong>Longitude:</strong> {{ data.lon }}</p>
+        </div>
+
+        <!-- Map Container -->
+        <div id="map" style="height: 400px; margin-top: 20px;"></div>
+
+        <!-- Inject data for JS -->
+       <!-- eslint-disable -->
+     <script>
+     window.geolocationData = {{ data | tojson | safe }};
+     </script>
+<!-- eslint-enable -->
+
+
+        <!-- Map Script -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+        {% endif %}
+
+        <a href="/" style="display: inline-block; margin-top: 20px;">Back</a>
+    </div>
+</body>
+</html>

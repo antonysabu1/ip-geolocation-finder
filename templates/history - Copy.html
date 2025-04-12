@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search History</h1>
+        {% if history %}
+            <ul>
+                {% for entry in history %}
+                    <li>{{ entry.ip }} — {{ entry.city }}, {{ entry.country }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No history found.</p>
+        {% endif %}
+        <a href="/">Back to Search</a>
+    </div>
+</body>
+</html>
