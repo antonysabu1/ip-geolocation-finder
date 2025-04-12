@@ -18,3 +18,15 @@ A simple Flask web app that fetches and displays geolocation data (IP, City, Cou
 
 ## 📂 Project Structure
 
+IP-Geolocation-Finder/
+├── app.py
+├── static/
+│   ├── style.css
+│   └── js/
+│       └── map.js
+├── templates/
+│   ├── index.html
+│   ├── result.html
+│   └── history.html
+├── .gitignore
+└── README.md
