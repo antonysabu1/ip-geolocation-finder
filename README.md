@@ -30,3 +30,9 @@ IP-Geolocation-Finder/
 │   └── history.html
 ├── .gitignore
 └── README.md
+## ▶️ How to Run
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/IP-Geolocation-Finder.git
+   cd IP-Geolocation-Finder
