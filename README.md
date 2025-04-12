@@ -36,3 +36,34 @@ IP-Geolocation-Finder/
    ```bash
    git clone https://github.com/yourusername/IP-Geolocation-Finder.git
    cd IP-Geolocation-Finder
+
+---
+# Create and activate virtual environment (optional but recommended)
+python -m venv venv
+
+# For Windows
+venv\Scripts\activate
+
+# For macOS/Linux
+source venv/bin/activate
+
+# Install Flask
+pip install flask
+
+# Run the app
+python app.py
+
+# Open in browser
+http://127.0.0.1:5000
+
+#screenshot of the project
+![image](https://github.com/user-attachments/assets/78c9ae31-6954-4f92-81e1-089a845cd341)
+
+📄 License
+This project is licensed under the MIT License.
+Feel free to use, modify, and share it for personal or commercial purposes!
+
+
+---
+
+Let me know if you want to customize any part (like adding your name, changing repo link, etc.), and I can update it for you!
