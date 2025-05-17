@@ -17,7 +17,7 @@ A simple Flask web app that fetches and displays geolocation data (IP, City, Cou
 - IP Geolocation API
 
 ## 📂 Project Structure
-
+```
 IP-Geolocation-Finder/
 ├── app.py
 ├── static/
@@ -30,33 +30,48 @@ IP-Geolocation-Finder/
 │   └── history.html
 ├── .gitignore
 └── README.md
+```
 ## ▶️ How to Run
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/IP-Geolocation-Finder.git
    cd IP-Geolocation-Finder
+   ```
 
----
-# Create and activate virtual environment (optional but recommended)
-python -m venv venv
+2. **Create and activate a virtual environment (optional but recommended)**
+   ```bash
+   python -m venv venv
+   ```
 
-# For Windows
-venv\Scripts\activate
+   - **For Windows**
+     ```bash
+     venv\Scripts\activate
+     ```
 
-# For macOS/Linux
-source venv/bin/activate
+   - **For macOS/Linux**
+     ```bash
+     source venv/bin/activate
+     ```
 
-# Install Flask
-pip install flask
+3. **Install dependencies**
+   ```bash
+   pip install flask
+   ```
 
-# Run the app
-python app.py
+4. **Run the app**
+   ```bash
+   python app.py
+   ```
 
-# Open in browser
-http://127.0.0.1:5000
+5. **Open in your browser**
+   ```
+   http://127.0.0.1:5000
+   ```
 
-#screenshot of the project
+## screenshot of the project
+
+
 ![image](https://github.com/user-attachments/assets/78c9ae31-6954-4f92-81e1-089a845cd341)
 
 📄 License
@@ -65,5 +80,3 @@ Feel free to use, modify, and share it for personal or commercial purposes!
 
 
 ---
-
-Let me know if you want to customize any part (like adding your name, changing repo link, etc.), and I can update it for you!
